@@ -6,7 +6,7 @@ main(void)
 int a;
 for (a = '0'; a <= '9'; ++a)
 {
-return (a);
+putchar(a);
 if (a < '9')
 {
 putchar(',');
