@@ -1,12 +1,13 @@
-#include
+#include "main.h"
 
-void print_alphabet(void)
+void
+print_alphabet(void)
 {
-	int i;
+char j;
 
-	for (i = 97; i <= 122; i++)
-	{
-		_putchar(i);
-	}
-	_putchar('\n');
+for (j = 97; j <= 122; j++)
+{
+_putchar(j);
+}
+_putchar('\n');
 }
