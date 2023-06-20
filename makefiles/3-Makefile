@@ -7,7 +7,7 @@ all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean :
 	$(RM) -f * .swp *~ $(NAME)
-oclean : 
+oclean :
 	$(RM) -f $(OBJ)
 fclean : $(RM) -f $(OBJ) * .swp *~ $(NAME)
 re : 
