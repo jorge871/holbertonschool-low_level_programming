@@ -1,22 +1,20 @@
 #include "main.h"
-int
-main(void)
+void
+print_square(int size)
 {
 int i;
+int a;
 
-for (i = 1; i <= 100; i++)
+for (i = 0; i < size ; i++)
 {
-if ((i % 3 == 0) && ((i % 5 == 0) && (i != 100)))
-printf("FizzBuzz ");
-if ((i % 3 == 0) && (i % 5 != 0))
-printf("Fizz ");
-if ((i % 5 == 0) && ((i % 3 != 0) && (i != 100)))
-printf("Buzz ");
-if ((i % 3 != 0) && (i % 5 != 0))
-printf("%d ", i);
-if (i == 100)
-printf("Buzz");
+a = 0;
+while (a < size)
+{
+_putchar(35);
+a++;
 }
-printf("\n");
-return (0);
+_putchar(10);
+}
+if (size < 1)
+_putchar(10);
 }
