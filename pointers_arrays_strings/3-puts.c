@@ -1,12 +1,13 @@
 #include "main.h"
-#include <stdio.h>
+
 void
 _puts(char *str)
 {
-int cont = 0;
-while (str[cont] != '\0')
+	int cont = 0;
+	while (str[cont] != '\0')
 {
-_putchar(str[cont]);
-cont++;
+	_putchar(str[cont]);
+	cont++;
 }
+
 }
