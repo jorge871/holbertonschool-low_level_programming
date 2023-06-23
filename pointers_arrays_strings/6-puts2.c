@@ -6,9 +6,10 @@ void
 puts2(char *str)
 {
 	int k = 0;
+
 	if (str == NULL)
- 	return;
-	
+	return;
+
 	while (str[k] != '\0')
 {
 	putchar(str[k]);
