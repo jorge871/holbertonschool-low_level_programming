@@ -3,14 +3,14 @@
 void
 _puts(char *str)
 {
-	int cont = 0;
-	while (*(str + cont))
-	{
-		_putchar(*(str + cont));
-		cont++;
-	}
-	{
-		_putchar('\n');
+int c = 0;
+while (*(str + c))
+{
+_putchar(*(str + c));
+c++;
+}
+{
+_putchar('\n');
 
 }
 }
