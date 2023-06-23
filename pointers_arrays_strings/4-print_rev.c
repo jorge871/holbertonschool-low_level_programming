@@ -8,10 +8,10 @@ a++;
 a--;
 
 
-while(*(s + a))
+while (*(s + a))
 {
-_putchar(*(s + i));
-i--;
+_putchar(*(s + a));
+a--;
 }
 _putchar('\n');
 }
