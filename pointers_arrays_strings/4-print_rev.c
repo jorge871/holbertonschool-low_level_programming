@@ -2,16 +2,14 @@
 void
 print_rev(char *s)
 {
-int a;
-while (*(s + a))
-a++;
-a--;
-
-
-while (*(s + a))
+int i;
+for (i = 0; *(s + i); i++)
 {
-_putchar(*(s + a));
-a--;
 }
+i--;
+for (; *(s + i); i--)
+
+_putchar(*(s + i));
+
 _putchar('\n');
 }
