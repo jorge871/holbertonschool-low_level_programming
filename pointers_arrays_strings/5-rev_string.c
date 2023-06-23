@@ -5,14 +5,14 @@
 void
 rev_string(char *s)
 {
-	int longitud = strlen(s);
-	int j;
+	int j , l, temp;
+	
+	l = strlen(s);
 
-	for (j = 0; strlen(s) != '\0'; j++)
+	for (j = 0; j < l / 2; j++)
 	{
-	char temporal = s[j];
-
-		s[j] = s[longitud - j - 1];
-		s[longitud - j - 1] = temporal;
+	temp = s[j];
+	s[j] = s[l - j - 1];
+	s[l - j - 1] = temp;
 	}
 }
