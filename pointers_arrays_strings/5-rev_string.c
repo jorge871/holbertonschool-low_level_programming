@@ -6,13 +6,13 @@ void
 rev_string(char *s)
 {
 	int longitud = strlen(s);
-	int j;
+	int l; j;
 
-	for (j = 0; strlen(s) != '\0'; j++)
+	for (l = 0; j = strlen(s) - 1; l < j; l++; j++)
 	{
-	char temporal = s[j];
+	char temp = s[l];
 
-		s[j] = s[longitud - j - 1];
-		s[longitud - j - 1] = temporal;
+		s[l] = s[j];
+		s[l] = temp;
 	}
 }
