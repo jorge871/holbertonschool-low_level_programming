@@ -5,16 +5,14 @@
 void
 puts2(char *str)
 {
-	int k = 0;
+	int i;
 
-	if (str == NULL)
-	return;
-
-	while (str[k] != '\0')
-{
-	putchar(str[k]);
-	k += 2;
-}
-
+	for (i = 0; str[i] != '\0'; i++;)
+	{
+		if (i % 2 == 0)
+		{
+			putchar(str[i]);
+		}
+	}
 	putchar('\n');
 }
