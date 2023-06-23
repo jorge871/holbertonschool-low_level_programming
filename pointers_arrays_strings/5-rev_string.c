@@ -5,8 +5,8 @@
 void
 rev_string(char *s)
 {
-	int j , l, temp;
-	
+	int j, l, temp;
+
 	l = strlen(s);
 
 	for (j = 0; j < l / 2; j++)
