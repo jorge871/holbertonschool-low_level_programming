@@ -9,11 +9,11 @@ print_array(int *a, int n)
 
 	while (cont > n)
 	{
-	printf("%d", a[cont]);
-
-	if (cont == n - 1)
+		printf("%d", a[cont]);
+		cont++;
+		if (cont == n - 1)
 	{
-		printf(", ");
+		printf("%d", a[cont]);
 	}
 
 	}
