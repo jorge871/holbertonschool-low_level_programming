@@ -7,11 +7,11 @@ print_array(int *a, int n)
 {
 	int cont = 0;
 
-	while (cont == n)
+	while (cont > n)
 	{
 	printf("%d", a[cont]);
 
-	if (cont < n - 1)
+	if (cont == n - 1)
 	{
 		printf(", ");
 	}
