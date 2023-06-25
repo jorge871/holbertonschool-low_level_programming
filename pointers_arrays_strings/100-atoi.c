@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int _atoi(char *s)
+int
+_atoi(char *s)
 {
 	int sign = 1;
 
