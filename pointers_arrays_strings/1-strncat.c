@@ -11,9 +11,9 @@ char
 	{
 		dest[k] = src[p];
 		k++;
-		{
 		if (src[p] == '\0')
-		break;
+		}
+			break;
 		}
 		p++;
 
