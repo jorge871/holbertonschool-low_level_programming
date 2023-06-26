@@ -1,26 +1,80 @@
 #include <stdio.h>
 
+int numStart(char *s);
+int getLength(int n, char *s);
+int getExponent(int len);
+
 int
 _atoi(char *s)
 {
-	int sign = 1;
+	int i, first, len, aux, num, exp, negatives;
+	unsigned int number;
 
-	unsigned int number = 0;
+	first = numStart(s);
+	len = getLength(first, s);
+	aux = first + len;
+	exp = getExponent(len);
+	number = 0;
 
-	while (*s == ' ')
+	for ( ; first <= aux; first++)
 	{
-		s++;
+		num = (s[first] - 48) * exp;
+		number = num + number;
+		exp = exp / 10;
 	}
 
-	if (*s == '+' || *s == '-')
+	negatives = 0;
+
+	for (i = 0; i < (first - len); i++)
 	{
-	sign = (*s++ == '-') ? -1 : 1;
+		if (s[i] == 45)
+			negatives++;
 	}
 
-	while (*s >= '0' && *s <= '9')
+	if (negatives % 2 != 0)
+		number = -number;
+
+	return (number);
+}
+
+int
+getExponent(int len)
+{
+	int exponent;
+
+	for (exponent = 1; len > 0; len--)
 	{
-	number = number * 10 + (*s++ - '0');
+		exponent = exponent * 10;
 	}
 
-	return (sign * number);
+	return (exponent);
+}
+
+int
+getLength(int n, char *s)
+{
+
+	int l = -1;
+
+	while (s[n] >= 48 && s[n] <= 57)
+	{
+		l++;
+		n++;
+	}
+
+	return (l);
+}
+
+int
+numStart(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] >= 47 && s[i] <= 57)
+			break;
+	}
+
+	return (i);
 }
