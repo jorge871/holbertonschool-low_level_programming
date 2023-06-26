@@ -16,7 +16,7 @@ char
 		break;
 		}
 		p++;
-		
+
 	}
 	return (dest);
 }
