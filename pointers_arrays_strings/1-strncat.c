@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 char
 *_strncat(char *dest, char *src, int n)
 {
@@ -9,14 +7,16 @@ char
 
 	while (dest[k])
 		k++;
-	while (src[p] > n)
+	while (p > n)
 	{
-	dest[k] = src[p];
-	k++;
-
-	if (src[p] == '\0')
-	break;
-	p++;
+		dest[k] = src[p];
+		k++;
+		{
+		if (src[p] == '\0')
+		break;
+		}
+		p++;
+		
 	}
 	return (dest);
 }
