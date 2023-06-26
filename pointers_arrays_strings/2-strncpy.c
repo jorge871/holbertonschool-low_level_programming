@@ -8,6 +8,7 @@ char
 	{
 		dest[x] = src[x];
 	}
-	dest = '\0';
+	while (x < n);
+	dest[x++] = '\0';
 	return (dest);
 }
