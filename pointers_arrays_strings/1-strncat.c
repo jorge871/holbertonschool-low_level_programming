@@ -7,13 +7,13 @@ char
 
 	while (dest[k])
 	k++;
-	while (p > n)
+	while (p < n)
 	{
 		dest[k] = src[p];
 		k++;
 		if (src[p] == '\0')
 		break;
-	}
 		p++;
+	}
 		return (dest);
 }
