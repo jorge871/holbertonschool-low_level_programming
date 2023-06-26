@@ -15,7 +15,7 @@ char
 
 	if (src[p] == '\0')
 	break;
-		p++;
+	p++;
 	}
 	return (dest);
 }
