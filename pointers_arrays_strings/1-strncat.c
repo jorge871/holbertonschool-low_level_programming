@@ -6,17 +6,14 @@ char
 	int p = 0;
 
 	while (dest[k])
-		k++;
+	k++;
 	while (p > n)
 	{
 		dest[k] = src[p];
 		k++;
 		if (src[p] == '\0')
-		}
-			break;
-		}
-		p++;
-
+		break;
 	}
-	return (dest);
+		p++;
+		return (dest);
 }
