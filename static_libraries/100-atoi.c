@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 int numStart(char *s);
@@ -7,7 +8,7 @@ int getExponent(int len);
 int
 _atoi(char *s)
 {
-int i, first, len, aux, num, exp, negatives;
+	int i, first, len, aux, num, exp, negatives;
 	unsigned int number;
 
 	first = numStart(s);
