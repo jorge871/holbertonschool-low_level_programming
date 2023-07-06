@@ -4,9 +4,9 @@
 char
 *_strdup(char *str)
 {
-	int cont;
+	int cont = 0;
 	char *t;
-	int contD;
+	int contD = 0;
 
 
 	if (str == NULL)
