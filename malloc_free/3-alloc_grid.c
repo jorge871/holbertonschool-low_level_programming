@@ -4,8 +4,8 @@
 int
 **alloc_grid(int width, int height)
 {
-	int i;
-	int k;
+	int i = 0;
+	int k = 0;
 	int **grid;
 
 	if (width < 1 || height < 1)
