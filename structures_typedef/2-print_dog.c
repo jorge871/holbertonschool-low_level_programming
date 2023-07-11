@@ -1,11 +1,9 @@
 #include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
-/**
- * print_dog: Prints of dates dog
- *@d: dates of pointer of dog
- */
-void print_dog(struct dog *d)
+
+void
+print_dog(struct dog *d)
 {
 	if (d != NULL)
 	{
