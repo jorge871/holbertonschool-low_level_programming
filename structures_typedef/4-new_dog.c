@@ -3,11 +3,11 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *new_dog - Create a new dog.
- *@name: name of dog.
- *@age: age of dog.
- *@owner: owner of the dog.
- *return: return this new dog.
+ * new_dog - create a new dog.
+ * @name: name of dog.
+ * @age: age of dog.
+ * @owner: owner of dog.
+ * Return: return this new dog.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -27,7 +27,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(my_dog);
 		return (NULL);
 	}
-	my_dog->name = malloc(strlen(owner) + 1);
+	my_dog->owner = malloc(strlen(owner) + 1);
 		if (my_dog->owner == NULL)
 		{
 			free(my_dog->owner);
