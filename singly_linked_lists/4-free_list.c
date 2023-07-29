@@ -3,12 +3,12 @@
 void
 free_list(list_t *head)
 {
-	list_t *fr;
-
-	fr = head;
-	while (fr != NULL)
+	while (head != NULL)
 	{
-		free(fr);
-		fr = fr->next;
+	list_t *temp = head;
+	head = head->next;
+	free(temp->str);
+	free(temp);
 	}
 }
+
