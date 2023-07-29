@@ -1,6 +1,7 @@
 #include "lists.h"
 
-list_t *add_node_end(list_t **head, const char *str)
+list_t
+*add_node_end(list_t **head, const char *str)
 {
 	list_t *NewEnd;
 	list_t *LastN = *head;
@@ -16,10 +17,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	NewEnd->len = len;
 	NewEnd->next = NULL;
 
-	if (*head == NULL) {
+	if (*head == NULL)
+	{
 		*head = NewEnd;
 		return (NewEnd);
-}
+	}
 	while (LastN->next)
 		LastN = LastN->next;
 
