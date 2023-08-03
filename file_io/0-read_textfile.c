@@ -1,7 +1,11 @@
 #include "main.h"
-
-ssize_t
-read_textfile(const char *filename, size_t letters)
+/**
+ * read_textfile : This is the file to read.
+ * @filename : This is character with pointer.
+ * @letters : This is a size_t.
+ * Return : return.
+ */
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int desc, cont;
 	char *buff;
